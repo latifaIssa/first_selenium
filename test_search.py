@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 class TestSearch(unittest.TestCase):
 
     def setUp(self):
-        self.driver =  webdriver.Chrome(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
 
     def test_search(self):
         self.driver.get("http://www.python.org")
