@@ -7,6 +7,5 @@ class TestTitle(Base):
 
     def test_title_text(self):
         driver = self.driver
-        print(driver.title)
         assert 'The Internet' in driver.title
         assert "The Internet 1" not in driver.title
