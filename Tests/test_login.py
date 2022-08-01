@@ -27,7 +27,6 @@ class TestLogin(Base):
         login_page.make_sure_that_username_field_exist()
         login_page.make_sure_that_login_button_exist()
 
-        # valid_username = 'tomsmith' and valid_pass = 'SuperSecretPassword!'
         # Fill the form with invalid username and valid password
         message_error = login_page.fill_information("aaa", password)
         # make sure that the message error correct
