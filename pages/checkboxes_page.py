@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 
 from Locators.checkboxes_locators import checkboxes_xpath, checkbox_1_xpath, checkbox_2_xpath
-from Locators.forgot_password_locators import retrieve_password_button_class_name, email_name, forgot_password_xpath
 
 
 class Checkboxes:
