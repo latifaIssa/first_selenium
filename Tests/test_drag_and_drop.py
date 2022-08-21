@@ -24,10 +24,6 @@ class TestDragAndDrop(Base):
         box_a = driver.find_element(By.ID, box_a_id)
         box_b = driver.find_element(By.ID, box_b_id)
 
-        # get elements location
-        box_a_location = box_a.location
-        box_b_location = box_b.location
-
         action = ActionChains(driver)
         action.click_and_hold(box_a).move_to_element(box_b).release().perform()
         time.sleep(2)
