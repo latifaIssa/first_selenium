@@ -4,8 +4,9 @@ import pytest
 
 from Base.base import Base
 from selenium.webdriver.common.by import By
-from Locators.drag_and_drop_locators import box_a_xpath, box_b_xpath, drag_and_drop_xpath, box_a_id, box_b_id
+from Locators.drag_and_drop_locators import drag_and_drop_xpath, box_a_id, box_b_id
 from selenium.webdriver import ActionChains
+
 
 @pytest.mark.usefixtures('set_up')
 class TestDragAndDrop(Base):
@@ -29,4 +30,3 @@ class TestDragAndDrop(Base):
         time.sleep(2)
         action.click_and_hold(box_b).move_to_element(box_a).release().perform()
         time.sleep(2)
-
