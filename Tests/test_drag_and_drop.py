@@ -29,8 +29,8 @@ class TestDragAndDrop(Base):
         box_b_location = box_b.location
 
         action = ActionChains(driver)
-        action.drag_and_drop_by_offset(box_b, box_a_location['x'], box_a_location['y']).build().perform()
+        action.click_and_hold(box_a).move_to_element(box_b).release().perform()
         time.sleep(2)
-        action.drag_and_drop_by_offset(box_a, box_b_location['x'], box_b_location['y']).build().perform()
+        action.click_and_hold(box_b).move_to_element(box_a).release().perform()
         time.sleep(2)
 
